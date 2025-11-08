@@ -1,16 +1,52 @@
-# React + Vite
+# マッチングアプリ モックアップ作成プロジェクト
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+このプロジェクトは、マッチングアプリのUIを色々試してみるためのモックアップ環境です。
 
-Currently, two official plugins are available:
+## 目的
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+各自がマッチングアプリのモックアップを作成し、アイデアを視覚的に確認することができます。
 
-## React Compiler
+## 使い方
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. 開発サーバーの起動
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. 新しいモックアップの作成手順
+
+`ExampleSample` フォルダを複製して、あなた独自のモックアップを作成してください。
+
+#### 手順:
+
+1. **フォルダをコピー**
+   - `src/pages/ExampleSample` フォルダをコピー
+   - `Example4`, `Example5` などの名前に変更
+
+2. **index.jsx を編集**
+   - コンポーネント名を変更（例: `Example4`, `Example5`）
+   - `title` と `description` を変更
+   - `prevLink` と `nextLink` を適切に設定
+
+3. **PhoneContent.jsx を編集**
+   - あなたのモックアップのUIを実装
+
+4. **App.jsx にルートを追加**
+   ```jsx
+   <Route path="/example4" element={<Example4 />} />
+   ```
+
+5. **Home.jsx にボタンを追加**
+   - ホーム画面から新しいページに遷移できるようにする
+
+### 設定項目
+
+各モックアップで設定する項目:
+
+- **title**: ページのタイトル
+- **description**: ページの説明
+- **PhoneContent**: スマートフォン画面のコンテンツ
+- **prevLink**: 前のページへのリンク
+- **nextLink**: 次のページへのリンク
