@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://kobe-university-matchingapp.github.io/mock-ups/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
