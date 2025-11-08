@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
-import Example1 from './pages/Example1'
-import Example2 from './pages/Example2'
-import Example3 from './pages/Example3'
+import Example1 from './pages/Example1/index.jsx'
+import Example2 from './pages/Example2/index.jsx'
+import Example3 from './pages/Example3/index.jsx'
 
 function App() {
   return (

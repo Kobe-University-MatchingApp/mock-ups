@@ -1,3 +1,6 @@
 export { default as HomeIcon } from './HomeIcon'
 export { default as Button } from './Button'
 export { default as Navigation } from './Navigation'
+export { default as ExampleHeader } from './ExampleHeader'
+export { default as PhoneFrame } from './PhoneFrame'
+export { default as ExampleFooter } from './ExampleFooter'
