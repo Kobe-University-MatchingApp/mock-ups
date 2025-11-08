@@ -35,10 +35,15 @@ jobs:
         with:
           node-version: lts/*
           cache: 'npm'
+          cache-dependency-path: './vite-mock-ups/package-lock.json'
       - name: Install dependencies
-        run: npm ci
+        run: |
+          cd vite-mock-ups
+          npm ci
       - name: Build
-        run: npm run build
+        run: |
+          cd vite-mock-ups
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
